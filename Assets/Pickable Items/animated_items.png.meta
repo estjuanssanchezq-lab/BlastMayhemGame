@@ -384,7 +384,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -408,7 +408,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -436,12 +436,12 @@ TextureImporter:
       name: animated_items_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 453
-        width: 22
-        height: 22
+        x: 6
+        y: 454
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,12 +458,12 @@ TextureImporter:
       name: animated_items_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 453
-        width: 18
-        height: 22
+        x: 40
+        y: 454
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -480,12 +480,12 @@ TextureImporter:
       name: animated_items_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 453
-        width: 10
-        height: 22
+        x: 76
+        y: 454
+        width: 8
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +502,12 @@ TextureImporter:
       name: animated_items_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 453
-        width: 18
-        height: 22
+        x: 104
+        y: 454
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,12 +524,12 @@ TextureImporter:
       name: animated_items_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 453
-        width: 22
-        height: 22
+        x: 134
+        y: 454
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -546,12 +546,12 @@ TextureImporter:
       name: animated_items_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 453
-        width: 18
-        height: 22
+        x: 168
+        y: 454
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: animated_items_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 453
-        width: 10
-        height: 22
+        x: 204
+        y: 454
+        width: 8
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -590,12 +590,12 @@ TextureImporter:
       name: animated_items_7
       rect:
         serializedVersion: 2
-        x: 231
-        y: 453
-        width: 18
-        height: 22
+        x: 232
+        y: 455
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: animated_items_8
       rect:
         serializedVersion: 2
-        x: 5
-        y: 421
-        width: 22
-        height: 20
+        x: 6
+        y: 422
+        width: 20
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -634,12 +634,12 @@ TextureImporter:
       name: animated_items_9
       rect:
         serializedVersion: 2
-        x: 36
-        y: 420
-        width: 24
-        height: 19
+        x: 37
+        y: 421
+        width: 22
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: animated_items_10
       rect:
         serializedVersion: 2
-        x: 69
-        y: 421
-        width: 22
-        height: 23
+        x: 70
+        y: 422
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -678,12 +678,12 @@ TextureImporter:
       name: animated_items_11
       rect:
         serializedVersion: 2
-        x: 101
-        y: 421
-        width: 22
-        height: 19
+        x: 102
+        y: 422
+        width: 20
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -700,12 +700,12 @@ TextureImporter:
       name: animated_items_12
       rect:
         serializedVersion: 2
-        x: 133
-        y: 421
-        width: 22
-        height: 20
+        x: 134
+        y: 422
+        width: 20
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -722,12 +722,12 @@ TextureImporter:
       name: animated_items_13
       rect:
         serializedVersion: 2
-        x: 165
-        y: 421
-        width: 22
-        height: 20
+        x: 166
+        y: 422
+        width: 20
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -744,12 +744,12 @@ TextureImporter:
       name: animated_items_14
       rect:
         serializedVersion: 2
-        x: 9
-        y: 390
-        width: 14
-        height: 21
+        x: 10
+        y: 391
+        width: 12
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -766,12 +766,12 @@ TextureImporter:
       name: animated_items_15
       rect:
         serializedVersion: 2
-        x: 40
-        y: 389
-        width: 16
-        height: 20
+        x: 41
+        y: 390
+        width: 14
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -788,12 +788,12 @@ TextureImporter:
       name: animated_items_16
       rect:
         serializedVersion: 2
-        x: 74
-        y: 391
-        width: 12
-        height: 23
+        x: 75
+        y: 392
+        width: 10
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -810,12 +810,12 @@ TextureImporter:
       name: animated_items_17
       rect:
         serializedVersion: 2
-        x: 105
-        y: 396
-        width: 14
-        height: 20
+        x: 106
+        y: 397
+        width: 12
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -832,12 +832,12 @@ TextureImporter:
       name: animated_items_18
       rect:
         serializedVersion: 2
-        x: 137
-        y: 393
-        width: 14
-        height: 21
+        x: 138
+        y: 394
+        width: 12
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -854,12 +854,12 @@ TextureImporter:
       name: animated_items_19
       rect:
         serializedVersion: 2
-        x: 169
-        y: 390
-        width: 14
-        height: 21
+        x: 170
+        y: 391
+        width: 12
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -876,12 +876,12 @@ TextureImporter:
       name: animated_items_20
       rect:
         serializedVersion: 2
-        x: 201
-        y: 392
-        width: 14
-        height: 21
+        x: 202
+        y: 393
+        width: 12
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -898,12 +898,12 @@ TextureImporter:
       name: animated_items_21
       rect:
         serializedVersion: 2
-        x: 233
-        y: 390
-        width: 14
-        height: 21
+        x: 234
+        y: 391
+        width: 12
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -920,12 +920,12 @@ TextureImporter:
       name: animated_items_22
       rect:
         serializedVersion: 2
-        x: 5
-        y: 357
-        width: 22
-        height: 22
+        x: 6
+        y: 358
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -942,12 +942,12 @@ TextureImporter:
       name: animated_items_23
       rect:
         serializedVersion: 2
-        x: 36
-        y: 357
-        width: 24
-        height: 22
+        x: 37
+        y: 358
+        width: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -964,12 +964,12 @@ TextureImporter:
       name: animated_items_24
       rect:
         serializedVersion: 2
-        x: 68
-        y: 357
-        width: 24
-        height: 22
+        x: 69
+        y: 358
+        width: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -986,12 +986,12 @@ TextureImporter:
       name: animated_items_25
       rect:
         serializedVersion: 2
-        x: 99
-        y: 357
-        width: 26
-        height: 22
+        x: 100
+        y: 358
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1008,12 +1008,12 @@ TextureImporter:
       name: animated_items_26
       rect:
         serializedVersion: 2
-        x: 131
-        y: 357
-        width: 26
-        height: 22
+        x: 132
+        y: 358
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1030,12 +1030,12 @@ TextureImporter:
       name: animated_items_27
       rect:
         serializedVersion: 2
-        x: 164
-        y: 357
-        width: 24
-        height: 22
+        x: 165
+        y: 358
+        width: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1052,12 +1052,12 @@ TextureImporter:
       name: animated_items_28
       rect:
         serializedVersion: 2
-        x: 5
-        y: 325
-        width: 22
-        height: 22
+        x: 6
+        y: 326
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1074,12 +1074,12 @@ TextureImporter:
       name: animated_items_29
       rect:
         serializedVersion: 2
-        x: 37
-        y: 325
-        width: 22
-        height: 22
+        x: 38
+        y: 326
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1096,12 +1096,12 @@ TextureImporter:
       name: animated_items_30
       rect:
         serializedVersion: 2
-        x: 68
-        y: 325
-        width: 24
-        height: 22
+        x: 69
+        y: 326
+        width: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1118,12 +1118,12 @@ TextureImporter:
       name: animated_items_31
       rect:
         serializedVersion: 2
-        x: 100
-        y: 325
-        width: 24
-        height: 22
+        x: 101
+        y: 326
+        width: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1140,12 +1140,12 @@ TextureImporter:
       name: animated_items_32
       rect:
         serializedVersion: 2
-        x: 131
-        y: 325
-        width: 26
-        height: 22
+        x: 132
+        y: 326
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1162,12 +1162,12 @@ TextureImporter:
       name: animated_items_33
       rect:
         serializedVersion: 2
-        x: 163
-        y: 325
-        width: 26
-        height: 22
+        x: 164
+        y: 326
+        width: 24
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1184,12 +1184,12 @@ TextureImporter:
       name: animated_items_34
       rect:
         serializedVersion: 2
-        x: 196
-        y: 325
-        width: 24
-        height: 22
+        x: 197
+        y: 326
+        width: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1206,12 +1206,12 @@ TextureImporter:
       name: animated_items_35
       rect:
         serializedVersion: 2
-        x: 7
-        y: 295
-        width: 18
-        height: 18
+        x: 8
+        y: 296
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1228,12 +1228,12 @@ TextureImporter:
       name: animated_items_36
       rect:
         serializedVersion: 2
-        x: 39
-        y: 295
-        width: 18
-        height: 18
+        x: 40
+        y: 296
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1250,12 +1250,12 @@ TextureImporter:
       name: animated_items_37
       rect:
         serializedVersion: 2
-        x: 71
-        y: 295
-        width: 18
-        height: 18
+        x: 72
+        y: 296
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1272,12 +1272,12 @@ TextureImporter:
       name: animated_items_38
       rect:
         serializedVersion: 2
-        x: 103
-        y: 295
-        width: 18
-        height: 18
+        x: 104
+        y: 296
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1294,12 +1294,12 @@ TextureImporter:
       name: animated_items_39
       rect:
         serializedVersion: 2
-        x: 135
-        y: 295
-        width: 18
-        height: 18
+        x: 136
+        y: 296
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1316,12 +1316,12 @@ TextureImporter:
       name: animated_items_40
       rect:
         serializedVersion: 2
-        x: 6
-        y: 262
-        width: 20
-        height: 20
+        x: 7
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1338,12 +1338,12 @@ TextureImporter:
       name: animated_items_41
       rect:
         serializedVersion: 2
-        x: 38
-        y: 262
-        width: 20
-        height: 20
+        x: 39
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1360,12 +1360,12 @@ TextureImporter:
       name: animated_items_42
       rect:
         serializedVersion: 2
-        x: 70
-        y: 262
-        width: 20
-        height: 20
+        x: 71
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1382,12 +1382,12 @@ TextureImporter:
       name: animated_items_43
       rect:
         serializedVersion: 2
-        x: 102
-        y: 262
-        width: 20
-        height: 20
+        x: 103
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1404,12 +1404,12 @@ TextureImporter:
       name: animated_items_44
       rect:
         serializedVersion: 2
-        x: 134
-        y: 262
-        width: 20
-        height: 20
+        x: 135
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1426,12 +1426,12 @@ TextureImporter:
       name: animated_items_45
       rect:
         serializedVersion: 2
-        x: 166
-        y: 262
-        width: 20
-        height: 20
+        x: 167
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1448,12 +1448,12 @@ TextureImporter:
       name: animated_items_46
       rect:
         serializedVersion: 2
-        x: 198
-        y: 262
-        width: 20
-        height: 20
+        x: 199
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1470,12 +1470,12 @@ TextureImporter:
       name: animated_items_47
       rect:
         serializedVersion: 2
-        x: 230
-        y: 262
-        width: 20
-        height: 20
+        x: 231
+        y: 263
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1492,12 +1492,12 @@ TextureImporter:
       name: animated_items_48
       rect:
         serializedVersion: 2
-        x: 5
-        y: 229
-        width: 22
-        height: 22
+        x: 6
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1514,12 +1514,12 @@ TextureImporter:
       name: animated_items_49
       rect:
         serializedVersion: 2
-        x: 37
-        y: 229
-        width: 22
-        height: 22
+        x: 38
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1536,12 +1536,12 @@ TextureImporter:
       name: animated_items_50
       rect:
         serializedVersion: 2
-        x: 69
-        y: 229
-        width: 22
-        height: 22
+        x: 70
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1558,12 +1558,12 @@ TextureImporter:
       name: animated_items_51
       rect:
         serializedVersion: 2
-        x: 101
-        y: 229
-        width: 22
-        height: 22
+        x: 102
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1580,12 +1580,12 @@ TextureImporter:
       name: animated_items_52
       rect:
         serializedVersion: 2
-        x: 133
-        y: 229
-        width: 22
-        height: 22
+        x: 134
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1602,12 +1602,12 @@ TextureImporter:
       name: animated_items_53
       rect:
         serializedVersion: 2
-        x: 165
-        y: 229
-        width: 22
-        height: 22
+        x: 166
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1624,12 +1624,12 @@ TextureImporter:
       name: animated_items_54
       rect:
         serializedVersion: 2
-        x: 197
-        y: 229
-        width: 22
-        height: 22
+        x: 198
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1646,12 +1646,12 @@ TextureImporter:
       name: animated_items_55
       rect:
         serializedVersion: 2
-        x: 229
-        y: 229
-        width: 22
-        height: 22
+        x: 230
+        y: 230
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1668,12 +1668,12 @@ TextureImporter:
       name: animated_items_56
       rect:
         serializedVersion: 2
-        x: 5
-        y: 197
-        width: 22
-        height: 22
+        x: 6
+        y: 198
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1690,12 +1690,12 @@ TextureImporter:
       name: animated_items_57
       rect:
         serializedVersion: 2
-        x: 37
-        y: 197
-        width: 22
-        height: 22
+        x: 38
+        y: 198
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1712,12 +1712,12 @@ TextureImporter:
       name: animated_items_58
       rect:
         serializedVersion: 2
-        x: 69
-        y: 197
-        width: 22
-        height: 22
+        x: 70
+        y: 198
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1734,12 +1734,12 @@ TextureImporter:
       name: animated_items_59
       rect:
         serializedVersion: 2
-        x: 102
-        y: 198
-        width: 20
-        height: 20
+        x: 103
+        y: 199
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1756,12 +1756,12 @@ TextureImporter:
       name: animated_items_60
       rect:
         serializedVersion: 2
-        x: 130
-        y: 194
-        width: 28
-        height: 28
+        x: 131
+        y: 195
+        width: 26
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1778,12 +1778,12 @@ TextureImporter:
       name: animated_items_61
       rect:
         serializedVersion: 2
-        x: 162
-        y: 194
-        width: 28
-        height: 28
+        x: 163
+        y: 195
+        width: 26
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1800,12 +1800,12 @@ TextureImporter:
       name: animated_items_62
       rect:
         serializedVersion: 2
-        x: 194
-        y: 194
-        width: 28
-        height: 28
+        x: 195
+        y: 195
+        width: 26
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1822,12 +1822,12 @@ TextureImporter:
       name: animated_items_63
       rect:
         serializedVersion: 2
-        x: 228
-        y: 196
-        width: 24
-        height: 24
+        x: 229
+        y: 197
+        width: 22
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1844,12 +1844,12 @@ TextureImporter:
       name: animated_items_64
       rect:
         serializedVersion: 2
-        x: 5
-        y: 166
-        width: 22
-        height: 23
+        x: 6
+        y: 167
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1866,12 +1866,12 @@ TextureImporter:
       name: animated_items_65
       rect:
         serializedVersion: 2
-        x: 37
-        y: 166
-        width: 22
-        height: 23
+        x: 38
+        y: 167
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1888,12 +1888,12 @@ TextureImporter:
       name: animated_items_66
       rect:
         serializedVersion: 2
-        x: 72
-        y: 165
-        width: 18
-        height: 25
+        x: 73
+        y: 166
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1910,12 +1910,12 @@ TextureImporter:
       name: animated_items_67
       rect:
         serializedVersion: 2
-        x: 102
-        y: 165
-        width: 18
-        height: 25
+        x: 103
+        y: 166
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1932,12 +1932,12 @@ TextureImporter:
       name: animated_items_68
       rect:
         serializedVersion: 2
-        x: 133
-        y: 166
-        width: 22
-        height: 23
+        x: 134
+        y: 167
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1954,12 +1954,12 @@ TextureImporter:
       name: animated_items_69
       rect:
         serializedVersion: 2
-        x: 165
-        y: 166
-        width: 22
-        height: 23
+        x: 166
+        y: 167
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1976,12 +1976,12 @@ TextureImporter:
       name: animated_items_70
       rect:
         serializedVersion: 2
-        x: 198
-        y: 165
-        width: 18
-        height: 25
+        x: 199
+        y: 166
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1998,12 +1998,12 @@ TextureImporter:
       name: animated_items_71
       rect:
         serializedVersion: 2
-        x: 232
-        y: 165
-        width: 18
-        height: 25
+        x: 233
+        y: 166
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2020,12 +2020,12 @@ TextureImporter:
       name: animated_items_72
       rect:
         serializedVersion: 2
-        x: 5
-        y: 134
-        width: 22
-        height: 23
+        x: 6
+        y: 135
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2042,12 +2042,12 @@ TextureImporter:
       name: animated_items_73
       rect:
         serializedVersion: 2
-        x: 37
-        y: 134
-        width: 22
-        height: 23
+        x: 38
+        y: 135
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2064,12 +2064,12 @@ TextureImporter:
       name: animated_items_74
       rect:
         serializedVersion: 2
-        x: 72
-        y: 133
-        width: 18
-        height: 25
+        x: 73
+        y: 134
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2086,12 +2086,12 @@ TextureImporter:
       name: animated_items_75
       rect:
         serializedVersion: 2
-        x: 102
-        y: 133
-        width: 18
-        height: 25
+        x: 103
+        y: 134
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2108,12 +2108,12 @@ TextureImporter:
       name: animated_items_76
       rect:
         serializedVersion: 2
-        x: 133
-        y: 134
-        width: 22
-        height: 23
+        x: 134
+        y: 135
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2130,12 +2130,12 @@ TextureImporter:
       name: animated_items_77
       rect:
         serializedVersion: 2
-        x: 165
-        y: 134
-        width: 22
-        height: 23
+        x: 166
+        y: 135
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2152,12 +2152,12 @@ TextureImporter:
       name: animated_items_78
       rect:
         serializedVersion: 2
-        x: 198
-        y: 133
-        width: 18
-        height: 25
+        x: 199
+        y: 134
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2174,12 +2174,12 @@ TextureImporter:
       name: animated_items_79
       rect:
         serializedVersion: 2
-        x: 232
-        y: 133
-        width: 18
-        height: 25
+        x: 233
+        y: 134
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2196,12 +2196,12 @@ TextureImporter:
       name: animated_items_80
       rect:
         serializedVersion: 2
-        x: 5
-        y: 102
-        width: 22
-        height: 23
+        x: 6
+        y: 103
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2218,12 +2218,12 @@ TextureImporter:
       name: animated_items_81
       rect:
         serializedVersion: 2
-        x: 37
-        y: 102
-        width: 22
-        height: 23
+        x: 38
+        y: 103
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2240,12 +2240,12 @@ TextureImporter:
       name: animated_items_82
       rect:
         serializedVersion: 2
-        x: 72
-        y: 101
-        width: 18
-        height: 25
+        x: 73
+        y: 102
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2262,12 +2262,12 @@ TextureImporter:
       name: animated_items_83
       rect:
         serializedVersion: 2
-        x: 102
-        y: 101
-        width: 18
-        height: 25
+        x: 103
+        y: 102
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2284,12 +2284,12 @@ TextureImporter:
       name: animated_items_84
       rect:
         serializedVersion: 2
-        x: 133
-        y: 102
-        width: 22
-        height: 23
+        x: 134
+        y: 103
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2306,12 +2306,12 @@ TextureImporter:
       name: animated_items_85
       rect:
         serializedVersion: 2
-        x: 165
-        y: 102
-        width: 22
-        height: 23
+        x: 166
+        y: 103
+        width: 20
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2328,12 +2328,12 @@ TextureImporter:
       name: animated_items_86
       rect:
         serializedVersion: 2
-        x: 198
-        y: 101
-        width: 18
-        height: 25
+        x: 199
+        y: 102
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2350,12 +2350,12 @@ TextureImporter:
       name: animated_items_87
       rect:
         serializedVersion: 2
-        x: 232
-        y: 101
-        width: 18
-        height: 25
+        x: 233
+        y: 102
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2372,12 +2372,12 @@ TextureImporter:
       name: animated_items_88
       rect:
         serializedVersion: 2
-        x: 6
-        y: 64
-        width: 20
-        height: 28
+        x: 7
+        y: 65
+        width: 18
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2394,12 +2394,12 @@ TextureImporter:
       name: animated_items_89
       rect:
         serializedVersion: 2
-        x: 40
-        y: 64
-        width: 16
-        height: 28
+        x: 41
+        y: 65
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2416,12 +2416,12 @@ TextureImporter:
       name: animated_items_90
       rect:
         serializedVersion: 2
-        x: 75
-        y: 64
-        width: 10
-        height: 28
+        x: 76
+        y: 65
+        width: 8
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2438,12 +2438,12 @@ TextureImporter:
       name: animated_items_91
       rect:
         serializedVersion: 2
-        x: 104
-        y: 64
-        width: 16
-        height: 28
+        x: 105
+        y: 65
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2460,12 +2460,12 @@ TextureImporter:
       name: animated_items_92
       rect:
         serializedVersion: 2
-        x: 134
-        y: 64
-        width: 20
-        height: 28
+        x: 135
+        y: 65
+        width: 18
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2482,12 +2482,12 @@ TextureImporter:
       name: animated_items_93
       rect:
         serializedVersion: 2
-        x: 168
-        y: 64
-        width: 16
-        height: 28
+        x: 169
+        y: 65
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2504,12 +2504,12 @@ TextureImporter:
       name: animated_items_94
       rect:
         serializedVersion: 2
-        x: 203
-        y: 64
-        width: 10
-        height: 28
+        x: 204
+        y: 65
+        width: 8
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2526,12 +2526,12 @@ TextureImporter:
       name: animated_items_95
       rect:
         serializedVersion: 2
-        x: 232
-        y: 64
-        width: 16
-        height: 28
+        x: 233
+        y: 65
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2548,12 +2548,12 @@ TextureImporter:
       name: animated_items_96
       rect:
         serializedVersion: 2
-        x: 6
-        y: 32
-        width: 20
-        height: 28
+        x: 7
+        y: 33
+        width: 18
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2570,12 +2570,12 @@ TextureImporter:
       name: animated_items_97
       rect:
         serializedVersion: 2
-        x: 40
-        y: 32
-        width: 16
-        height: 28
+        x: 41
+        y: 33
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2592,12 +2592,12 @@ TextureImporter:
       name: animated_items_98
       rect:
         serializedVersion: 2
-        x: 75
-        y: 32
-        width: 10
-        height: 28
+        x: 76
+        y: 33
+        width: 8
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2614,12 +2614,12 @@ TextureImporter:
       name: animated_items_99
       rect:
         serializedVersion: 2
-        x: 104
-        y: 32
-        width: 16
-        height: 28
+        x: 105
+        y: 33
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2636,12 +2636,12 @@ TextureImporter:
       name: animated_items_100
       rect:
         serializedVersion: 2
-        x: 134
-        y: 32
-        width: 20
-        height: 28
+        x: 135
+        y: 33
+        width: 18
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2658,12 +2658,12 @@ TextureImporter:
       name: animated_items_101
       rect:
         serializedVersion: 2
-        x: 168
-        y: 32
-        width: 16
-        height: 28
+        x: 169
+        y: 33
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2680,12 +2680,12 @@ TextureImporter:
       name: animated_items_102
       rect:
         serializedVersion: 2
-        x: 203
-        y: 32
-        width: 10
-        height: 28
+        x: 204
+        y: 33
+        width: 8
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2702,12 +2702,12 @@ TextureImporter:
       name: animated_items_103
       rect:
         serializedVersion: 2
-        x: 232
-        y: 32
-        width: 16
-        height: 28
+        x: 233
+        y: 33
+        width: 14
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2724,12 +2724,12 @@ TextureImporter:
       name: animated_items_104
       rect:
         serializedVersion: 2
-        x: 6
-        y: 0
-        width: 20
-        height: 28
+        x: 7
+        y: 1
+        width: 18
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2746,12 +2746,12 @@ TextureImporter:
       name: animated_items_105
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 17
-        height: 28
+        x: 40
+        y: 1
+        width: 15
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2768,12 +2768,12 @@ TextureImporter:
       name: animated_items_106
       rect:
         serializedVersion: 2
-        x: 75
-        y: 0
-        width: 10
-        height: 28
+        x: 76
+        y: 1
+        width: 8
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2790,12 +2790,12 @@ TextureImporter:
       name: animated_items_107
       rect:
         serializedVersion: 2
-        x: 104
-        y: 0
-        width: 17
-        height: 28
+        x: 105
+        y: 1
+        width: 15
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2812,12 +2812,12 @@ TextureImporter:
       name: animated_items_108
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
-        width: 20
-        height: 28
+        x: 135
+        y: 1
+        width: 18
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2834,12 +2834,12 @@ TextureImporter:
       name: animated_items_109
       rect:
         serializedVersion: 2
-        x: 167
-        y: 0
-        width: 17
-        height: 28
+        x: 168
+        y: 1
+        width: 15
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2856,12 +2856,12 @@ TextureImporter:
       name: animated_items_110
       rect:
         serializedVersion: 2
-        x: 203
-        y: 0
-        width: 10
-        height: 28
+        x: 204
+        y: 1
+        width: 8
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2878,12 +2878,12 @@ TextureImporter:
       name: animated_items_111
       rect:
         serializedVersion: 2
-        x: 232
-        y: 0
-        width: 17
-        height: 28
+        x: 233
+        y: 1
+        width: 15
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2900,7 +2900,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5d17efc68a710f241b476ff7929e01a2
     internalID: 0
     vertices: []
     indices: 
@@ -2908,7 +2908,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       animated_items_0: -484856011266595697
       animated_items_1: 615492177500654179
