@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 7806427226461980936}
   - component: {fileID: 40517434887343055}
   - component: {fileID: 3251680646090205940}
-  - component: {fileID: 3809568585206578580}
-  - component: {fileID: 226471468938923361}
   - component: {fileID: 7985793958649955546}
   - component: {fileID: 8789811953524928142}
   m_Layer: 0
@@ -146,31 +144,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3809568585206578580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6268137492468819005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5ad83b0d624594aac47aa1c2429539, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bomb
-  lifeTime: 15
---- !u!114 &226471468938923361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6268137492468819005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcebf2ccbff8dff409bfca09b39d934b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BombPickup
 --- !u!58 &7985793958649955546
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -219,3 +192,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa9749267fd38f4aa184bbd99c21535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectibles
+  pickupType: 0

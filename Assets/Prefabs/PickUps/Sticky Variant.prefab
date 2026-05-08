@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8789811953524928142, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: lifeTime
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

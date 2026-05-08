@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerTest : MonoBehaviour
+public class PlayerTest : MonoBehaviour, IPlayerPickupReceiver
 {
     [SerializeField] private float speed = 5f;
     [SerializeField] private float bombInventory = 0f;

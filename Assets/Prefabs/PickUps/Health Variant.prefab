@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6268137492468819005, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_Name
-      value: BombPrefab Variant
+      value: Health Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7806427226461980936, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_Sprite
@@ -87,6 +87,10 @@ PrefabInstance:
     - target: {fileID: 7985793958649955546, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_Offset.y
       value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789811953524928142, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: lifeTime
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
