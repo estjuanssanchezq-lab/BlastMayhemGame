@@ -1,27 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerTest : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float bombInventory = 0f;
+    [SerializeField, Min(0)] private int bombInventory = 0;
 
-    private Vector2 movement;
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        float input = Input.GetAxis("Horizontal");
-        movement.x = input * speed * Time.deltaTime;
-        transform.Translate(movement);
-
-        // Aumentar bombInventory al recoger una bomba
-
-    }
+    public int BombInventory => bombInventory;
 
     public void AddBomb()
     {
