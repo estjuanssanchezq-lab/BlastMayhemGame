@@ -1,13 +1,11 @@
 using UnityEngine;
 
+// Este script es para la bomba LANZADA, no para la bomba que se recoge.
 public class Bomb : MonoBehaviour
 {
-    [SerializeField] private float lifeTime = 15f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-        Destroy(gameObject, lifeTime);
     }
 
     // Update is called once per frame
