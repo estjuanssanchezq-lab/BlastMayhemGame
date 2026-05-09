@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerTest : MonoBehaviour, IPlayerPickupReceiver
+public class PlayerTest : MonoBehaviour, IPickupReceiver
 {
     [SerializeField] private float speed = 5f;
     [SerializeField] private float bombInventory = 0f;
@@ -27,4 +27,5 @@ public class PlayerTest : MonoBehaviour, IPlayerPickupReceiver
         bombInventory++;
         Debug.Log("Bombas en inventario: " + bombInventory);
     }
+
 }
