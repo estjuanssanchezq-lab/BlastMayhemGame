@@ -16,7 +16,7 @@ TagManager:
   - Player
   - Ground
   - PickupGround
-  - PickupDetector
+  - PickupPlayerDetector
   - 
   - 
   - 

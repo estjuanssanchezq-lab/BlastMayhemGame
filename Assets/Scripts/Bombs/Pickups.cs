@@ -14,7 +14,6 @@ public class Pickups : MonoBehaviour
         Destroy(gameObject, lifeTime); // Destruye el objeto después de lifeTime segundos
     }
 
-
     // Awake se llama antes de Start, lo que garantiza que rb y animator estén disponibles
     // sin tener que llamar a GetComponent en cada frame o en otros métodos, mejorando el rendimiento.
     private void Awake()
@@ -27,10 +26,10 @@ public class Pickups : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Entró trigger con: " + collision.gameObject.name);
-
             if (collected) return; // Evita recoger el mismo objeto varias veces
             collected = true;
+
+            Debug.Log("Entró trigger con: " + collision.gameObject.name);
 
             // Basicamente esta linea dice: dame cualquier componente
             // de este GameObject que pueda recibir pickups,
@@ -43,6 +42,8 @@ public class Pickups : MonoBehaviour
             // Busca cualquier componente que sepa recibir pickups
             IPickupReceiver receiver = collision.gameObject.GetComponent<IPickupReceiver>();
 
+            if (receiver == null) return; // Si no encuentra un receptor, no hace nada
+
             switch (pickupType)
             {
                 case PickupType.Bomb:
@@ -52,25 +53,24 @@ public class Pickups : MonoBehaviour
 
                 case PickupType.Health:
                     Debug.Log("Vida recogida");
+                    receiver.AddHealth();
                     break;
 
                 case PickupType.Boomerang:
                     Debug.Log("Boomerang recogido");
+                    receiver.AddBoomerang();
                     break;
             }
-
             Collect();
         }
     }
-
 
     public void Collect()
     {
         animator.SetTrigger("Collect");
 
-        // Detener fisicar para que no siga cayendo mientras se anima
+        // Detener fisicas para que no siga cayendo mientras se anima
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Kinematic;
     }
-
 }
