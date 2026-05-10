@@ -8,4 +8,11 @@
 public interface IPickupReceiver
 {
     void AddBomb();
+    void AddHealth();
+    void AddBoomerang();
 }
+
+
+
+
+

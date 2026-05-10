@@ -6,13 +6,7 @@ public class PlayerTest : MonoBehaviour, IPickupReceiver
     [SerializeField] private float speed = 5f;
     [SerializeField] private float bombInventory = 0f;
 
-
     private Vector2 movement;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -28,4 +22,17 @@ public class PlayerTest : MonoBehaviour, IPickupReceiver
         Debug.Log("Bombas en inventario: " + bombInventory);
     }
 
+    public void AddHealth()
+    {
+        Debug.Log("Salud aumentada");
+    }
+
+    public void AddBoomerang()
+    {
+        Debug.Log("Tipo de bomba ahora: Boomerang");
+    }
 }
+
+
+
+
