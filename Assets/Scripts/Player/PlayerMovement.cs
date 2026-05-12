@@ -2,80 +2,45 @@ using UnityEngine;
 
 // Esta clase controla todo lo relacionado con el jugador:
 // movimiento, salto, doble salto, animaciones, vida y lanzamiento de bombas.
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IPickupReceiver
 {
-    // Velocidad con la que se mueve el jugador hacia la izquierda o derecha.
-    public float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f; // Velocidad con la que se mueve el jugador hacia la izquierda o derecha.
+    [SerializeField] private float jumpForce = 10f; // Fuerza con la que salta el jugador.
+    [SerializeField] private float bombInventory = 0f;
+    [SerializeField] private int maxHealth = 3; // Vida máxima del jugador.
+    [SerializeField] private int maxJumps = 2; // Cantidad máxima de saltos permitidos. 2 significa salto normal + doble salto.
 
-    // Fuerza con la que salta el jugador.
-    public float jumpForce = 10f;
+    [SerializeField] private Vector3 originalScale; // Guarda la escala original del personaje. Esto sirve para voltearlo a izquierda/derecha sin cambiarle el tamaño.
 
-    // Guarda la escala original del personaje.
-    // Esto sirve para voltearlo a izquierda/derecha sin cambiarle el tamaño.
-    private Vector3 originalScale;
+    [SerializeField] private GameObject bombPrefab; // Prefab de la bomba que el jugador va a lanzar. Se asigna desde el Inspector de Unity.
+    [SerializeField] private Transform bombSpawnPoint; // Punto desde donde aparece la bomba cuando se lanza. Normalmente es un objeto hijo llamado BombSpawnPoint.
 
-    // Prefab de la bomba que el jugador va a lanzar.
-    // Se asigna desde el Inspector de Unity.
-    public GameObject bombPrefab;
+    private int currentHealth; // Vida actual del jugador. Es private porque solo se maneja desde este script.
+    private int jumpsRemaining; // Cantidad de saltos que le quedan al jugador en este momento.
+    private int direction = 1; // Dirección hacia donde mira el jugador / 1 = derecha / -1 = izquierda.
 
-    // Punto desde donde aparece la bomba cuando se lanza.
-    // Normalmente es un objeto hijo llamado BombSpawnPoint.
-    public Transform bombSpawnPoint;
+    private bool isGrounded; // Indica si el jugador está tocando el piso. True = está en el piso / False = está en el aire.
 
-    // Vida máxima del jugador.
-    // Como es public, se puede cambiar desde el Inspector.
-    public int maxHealth = 3;
-
-    // Vida actual del jugador.
-    // Es private porque solo se maneja desde este script.
-    private int currentHealth;
-
-    // Referencia al Rigidbody2D del jugador.
-    // Sirve para moverlo usando físicas.
-    private Rigidbody2D rb;
-
-    // Indica si el jugador está tocando el piso.
-    // true = está en el piso.
-    // false = está en el aire.
-    private bool isGrounded;
-
-    // Referencia al Animator del jugador.
-    // Sirve para cambiar entre Idle, Run y Jump.
-    private Animator animator;
-
-    // Dirección hacia donde mira el jugador.
-    // 1 = derecha.
-    // -1 = izquierda.
-    private int direction = 1;
-
-    // Cantidad máxima de saltos permitidos.
-    // 2 significa salto normal + doble salto.
-    public int maxJumps = 2;
-
-    // Cantidad de saltos que le quedan al jugador en este momento.
-    private int jumpsRemaining;
+    private Animator animator; // Referencia al Animator del jugador. Sirve para cambiar entre Idle, Run y Jump.
+    private Rigidbody2D rb; // Referencia al Rigidbody2D del jugador. Sirve para moverlo usando físicas.
 
     [Header("Controles")]
 
     // Tecla para moverse a la izquierda.
-    // Player1 usa A.
-    // Player2 puede usar LeftArrow desde el Inspector.
-    public KeyCode leftKey = KeyCode.A;
+    // Player1 usa A / Player2 puede usar LeftArrow desde el Inspector.
+    [SerializeField] private KeyCode leftKey = KeyCode.A;
 
     // Tecla para moverse a la derecha.
-    // Player1 usa D.
-    // Player2 puede usar RightArrow desde el Inspector.
-    public KeyCode rightKey = KeyCode.D;
+    // Player1 usa D / Player2 puede usar RightArrow desde el Inspector.
+    [SerializeField] private KeyCode rightKey = KeyCode.D;
 
     // Tecla para saltar.
-    // Player1 usa W.
-    // Player2 puede usar UpArrow desde el Inspector.
-    public KeyCode jumpKey = KeyCode.W;
+    // Player1 usa W / Player2 puede usar UpArrow desde el Inspector.
+    [SerializeField] private KeyCode jumpKey = KeyCode.W;
 
     // Tecla para lanzar bomba.
-    // Player1 usa X.
-    // Player2 puede usar Space desde el Inspector.
-    public KeyCode bombKey = KeyCode.X;
+    // Player1 usa X /Player2 puede usar Space desde el Inspector.
+    [SerializeField] private KeyCode bombKey = KeyCode.X;
 
     // Start se ejecuta una sola vez cuando inicia el juego.
     void Start()
@@ -235,7 +200,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Función que se ejecuta cuando el jugador muere.
-    void Die()
+    public void Die()
     {
         // Mensaje en consola para saber que murió.
         Debug.Log("Player murió");
@@ -246,7 +211,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Función encargada de lanzar la bomba.
-    void ThrowBomb()
+    public void ThrowBomb()
     {
         // Si no se asignó el prefab de la bomba en el Inspector...
         if (bombPrefab == null)
@@ -283,5 +248,22 @@ public class PlayerMovement : MonoBehaviour
             // 4f es la fuerza vertical.
             bombRb.AddForce(new Vector2(direction * 8f, 4f), ForceMode2D.Impulse);
         }
+    }
+
+    // Aumentar bombInventory al recoger una bomba
+    public void AddBomb()
+    {
+        bombInventory++;
+        Debug.Log("Bombas en inventario: " + bombInventory);
+    }
+
+    public void AddHealth()
+    {
+        Debug.Log("Salud aumentada");
+    }
+
+    public void AddBoomerang()
+    {
+        Debug.Log("Tipo de bomba ahora: Boomerang");
     }
 }
