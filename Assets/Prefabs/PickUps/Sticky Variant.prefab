@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 40517434887343055, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: a913e0b3d5ade9441a0ec4e6ef4d6b81, type: 2}
+    - target: {fileID: 704768378790563993, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Radius
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 704768378790563993, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 704768378790563993, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1228074173909535750, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.8915744
@@ -48,6 +64,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3251680646090205940, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579188027845951593, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Radius
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579188027845951593, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579188027845951593, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548882865415403085, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548882865415403085, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6268137492468819005, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_Name
       value: Sticky Variant
@@ -65,6 +105,38 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7985793958649955546, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8237278725568704874, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Radius
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8237278725568704874, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8237278725568704874, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789811953524928142, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: lifeTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789811953524928142, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: pickupType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099427423929748319, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Radius
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099427423929748319, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099427423929748319, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
