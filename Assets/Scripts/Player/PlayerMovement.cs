@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
 {
     [SerializeField] private float moveSpeed = 5f; // Velocidad con la que se mueve el jugador hacia la izquierda o derecha.
     [SerializeField] private float jumpForce = 10f; // Fuerza con la que salta el jugador.
-    [SerializeField] private float bombInventory = 0f;
+    [SerializeField] private float bombInventory = 0;
     [SerializeField] private int maxHealth = 3; // Vida máxima del jugador.
     [SerializeField] private int maxJumps = 2; // Cantidad máxima de saltos permitidos. 2 significa salto normal + doble salto.
 
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
 
     private Animator animator; // Referencia al Animator del jugador. Sirve para cambiar entre Idle, Run y Jump.
     private Rigidbody2D rb; // Referencia al Rigidbody2D del jugador. Sirve para moverlo usando físicas.
+    private BombType currentBombType = BombType.Normal; // Por default el jugador empieza con el tipo de bomba normal.
 
     [Header("Controles")]
 
@@ -141,11 +142,11 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
 
         // Esta tecla H es solo para probar daño.
         // Cuando el sistema de bombas haga daño, esta parte se puede borrar.
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            // Le quita 1 punto de vida al jugador.
-            TakeDamage(1);
-        }
+        //if (Input.GetKeyDown(KeyCode.H))
+        //{
+        //    // Le quita 1 punto de vida al jugador.
+        //    TakeDamage(1);
+        //}
 
         // Si se presiona la tecla de bomba...
         if (Input.GetKeyDown(bombKey))
@@ -213,41 +214,33 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     // Función encargada de lanzar la bomba.
     public void ThrowBomb()
     {
-        // Si no se asignó el prefab de la bomba en el Inspector...
-        if (bombPrefab == null)
+        if (bombInventory <= 0)
         {
-            // Mostramos una advertencia y detenemos la función.
-            Debug.LogWarning("Falta asignar bombPrefab en Player1");
+            Debug.Log("No hay bombas para lanzar");
             return;
         }
 
-        // Si no se asignó el punto desde donde sale la bomba...
-        if (bombSpawnPoint == null)
-        {
-            // Mostramos una advertencia y detenemos la función.
-            Debug.LogWarning("Falta asignar BombSpawnPoint en Player1");
+        if (bombPrefab == null || bombSpawnPoint == null)
             return;
-        }
 
-        // Creamos una bomba en la posición del BombSpawnPoint.
+        bombInventory--;
+
         GameObject bomb = Instantiate(
             bombPrefab,
             bombSpawnPoint.position,
             Quaternion.identity
         );
 
-        // Buscamos si la bomba tiene Rigidbody2D.
-        Rigidbody2D bombRb = bomb.GetComponent<Rigidbody2D>();
+        Bomb bombScript = bomb.GetComponent<Bomb>();
 
-        // Si la bomba sí tiene Rigidbody2D...
-        if (bombRb != null)
+        if (bombScript != null)
         {
-            // Le damos fuerza a la bomba.
-            // direction controla si sale hacia izquierda o derecha.
-            // 8f es la fuerza horizontal.
-            // 4f es la fuerza vertical.
-            bombRb.AddForce(new Vector2(direction * 8f, 4f), ForceMode2D.Impulse);
+            //bombScript.Throw(new Vector2(direction, 1f), 10f);
+            bombScript.Throw(Vector2.up, 10f);
+
         }
+
+        Debug.Log("Bomba lanzada. Bombas restantes: " + bombInventory);
     }
 
     // Aumentar bombInventory al recoger una bomba
@@ -255,6 +248,12 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     {
         bombInventory++;
         Debug.Log("Bombas en inventario: " + bombInventory);
+    }
+
+    public void SetBombType(BombType bombType)
+    {
+        Debug.Log("Tipo de bomba ahora: " + bombType);
+        currentBombType = bombType;
     }
 
     public void AddHealth()

@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 40517434887343055}
   - component: {fileID: 8789811953524928142}
   - component: {fileID: 4548882865415403085}
+  - component: {fileID: 6072296769990044629}
   m_Layer: 6
   m_Name: BombPickupPrefab
   m_TagString: Pickup
@@ -261,7 +262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6268137492468819005}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd63ec8890039a44fb2e20fcd0b815f8, type: 3}
   m_Name: 
@@ -296,3 +297,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6072296769990044629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6268137492468819005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5ad83b0d624594aac47aa1c2429539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bomb
+  currentState: 0
+  rb: {fileID: 4548882865415403085}
+  animator: {fileID: 40517434887343055}
+  groundCollider: {fileID: 704768378790563993}
+  playerDetector: {fileID: 3579188027845951593}
+  restingVelocityThreshold: 0.2

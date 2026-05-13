@@ -104,6 +104,26 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6072296769990044629, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072296769990044629, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072296769990044629, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: minThrownTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072296769990044629, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: groundCollider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072296769990044629, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: playerDetector
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6268137492468819005, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: m_Name
       value: Health Variant
@@ -141,6 +161,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8789811953524928142, guid: f0a2953d5e720c0468f955032142d510, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789811953524928142, guid: f0a2953d5e720c0468f955032142d510, type: 3}
       propertyPath: pickupType
       value: 1
       objectReference: {fileID: 0}
@@ -156,7 +180,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6072296769990044629, guid: f0a2953d5e720c0468f955032142d510, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
