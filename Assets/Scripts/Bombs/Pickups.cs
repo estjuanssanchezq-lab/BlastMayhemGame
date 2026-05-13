@@ -46,10 +46,10 @@ public class Pickups : MonoBehaviour
 
             switch (pickupType)
             {
-                case PickupType.Bomb:
-                    Debug.Log("Bomba recogida");
-                    receiver.AddBomb();
-                    break;
+                //case PickupType.Bomb:
+                //    Debug.Log("Bomba recogida");
+                //    receiver.AddBomb();
+                //    break;
 
                 case PickupType.Health:
                     Debug.Log("Vida recogida");
@@ -58,7 +58,7 @@ public class Pickups : MonoBehaviour
 
                 case PickupType.Boomerang:
                     Debug.Log("Boomerang recogido");
-                    receiver.AddBoomerang();
+                    receiver.SetBombType(BombType.Boomerang);
                     break;
             }
             Collect();

@@ -9,7 +9,7 @@ public interface IPickupReceiver
 {
     void AddBomb();
     void AddHealth();
-    void AddBoomerang();
+    void SetBombType(BombType bombType);
 }
 
 
