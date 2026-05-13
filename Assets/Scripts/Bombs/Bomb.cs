@@ -14,11 +14,9 @@ public class Bomb : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private float restingVelocityThreshold = 0.2f; // Velocidad mínima para considerar que la bomba está en reposo
-    [SerializeField] private float minThrownTime = 1.5f; // Tiempo mínimo que debe pasar desde que se lanza la bomba para que pueda entrar en estado Resting
     [SerializeField] private int damage = 1; // Daño que la bomba inflige al jugador
 
     private bool collected = false;
-    private float thrownTimer = 0f;
     private bool isGrounded = false; // La bomba debe estar lenta y en el suelo para volver a ser recogida.
 
     private void Awake()
@@ -32,12 +30,7 @@ public class Bomb : MonoBehaviour
     {
         if (currentState == BombState.Thrown)
         {
-            thrownTimer += Time.deltaTime; // Incrementar tiempo desde que se lanzó la bomba...
-
-            if (thrownTimer >= minThrownTime)
-            { // ...y solo permitir entrar en estado Resting después de un tiempo mínimo
                 CheckIfResting();
-            }
         }
     }
 
@@ -53,8 +46,9 @@ public class Bomb : MonoBehaviour
         currentState = BombState.Resting;
 
         rb.linearVelocity = Vector2.zero;
-        playerDetector.enabled = true; // Activar el detector de jugadores para permitir que la bomba sea recogida
+        playerDetector.enabled = false; // Activar el detector de jugadores para permitir que la bomba sea recogida
         Debug.Log("Bomba en estado Resting. Puede volver a ser recogida");
+        Debug.Log("PlayerDetector enabled: " + playerDetector.enabled);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -109,19 +103,15 @@ public class Bomb : MonoBehaviour
         rb.linearVelocity = Vector2.zero; // Detener la bomba
         rb.bodyType = RigidbodyType2D.Kinematic; // Hacer que la bomba no sea afectada por la física
 
-        groundCollider.enabled = false; // Desactivar el collider del suelo para evitar colisiones mientras se anima
-        playerDetector.enabled = false; // Desactivar el detector de jugadores para evitar recoger la bomba mientras se anima
+        //groundCollider.enabled = false; // Desactivar el collider del suelo para evitar colisiones mientras se anima
+        //playerDetector.enabled = false; // Desactivar el detector de jugadores para evitar recoger la bomba mientras se anima
     }
 
     public void Throw(Vector2 direction, float force)
     {
         collected = false;
         currentState = BombState.Thrown;
-        thrownTimer = 0f; // Reiniciar el tiempo desde que se lanzó la bomba
         isGrounded = false; // La bomba no está en el suelo al ser lanzada
-
-        groundCollider.enabled = true; // Activar el collider del suelo para que la bomba pueda colisionar con el suelo
-        playerDetector.enabled = false; // Desactivar el detector de jugadores para evitar recoger la bomba mientras está en el aire
 
         rb.bodyType = RigidbodyType2D.Dynamic; // Hacer que la bomba sea afectada por la física
         rb.linearVelocity = Vector2.zero; // Reiniciar la velocidad antes de aplicar la fuerza
@@ -141,7 +131,9 @@ public class Bomb : MonoBehaviour
         playerDetector.enabled = false;
 
         // Faltaria agregar el animator.SetTrigger("Explode")
-        Destroy(gameObject); // Destruir la bomba después de explotar
+        //Destroy(gameObject); // Destruir la bomba después de explotar
+
+        animator.SetTrigger("Explode");
     }
 }
 
