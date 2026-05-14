@@ -132,13 +132,15 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
         // Si se presiona la tecla de salto y todavía quedan saltos disponibles...
         if (Input.GetKeyDown(jumpKey) && jumpsRemaining > 0)
         {
-            // Aplicamos fuerza de salto en Y.
-            // La X se conserva para que pueda saltar mientras se mueve.
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
-            // Restamos un salto disponible.
-            jumpsRemaining--;
+             if (!isGrounded && jumpsRemaining == 1)
+        {
+             animator.SetBool("isDoubleJumping", true);
         }
+
+    jumpsRemaining--;
+}
 
         // Esta tecla H es solo para probar daño.
         // Cuando el sistema de bombas haga daño, esta parte se puede borrar.
@@ -162,12 +164,9 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
         // Si el objeto con el que chocó se llama Ground...
         if (collision.gameObject.name == "Ground")
         {
-            // Marcamos que el jugador está en el piso.
-            isGrounded = true;
-
-            // Restauramos los saltos disponibles.
-            // Esto permite volver a hacer salto y doble salto.
-            jumpsRemaining = maxJumps;
+        isGrounded = true;
+        jumpsRemaining = maxJumps;
+        animator.SetBool("isDoubleJumping", false);
         }
     }
 
@@ -201,14 +200,21 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     }
 
     // Función que se ejecuta cuando el jugador muere.
-    public void Die()
+    void Die()
     {
-        // Mensaje en consola para saber que murió.
         Debug.Log("Player murió");
 
-        // Desactiva el objeto del jugador.
-        // Visualmente desaparece del juego.
-        gameObject.SetActive(false);
+        animator.SetBool("isDead", true);
+
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
+
+        Invoke(nameof(DisablePlayer), 0.6f);
+    }
+
+    void DisablePlayer()
+    {
+    gameObject.SetActive(false);
     }
 
     // Función encargada de lanzar la bomba.
