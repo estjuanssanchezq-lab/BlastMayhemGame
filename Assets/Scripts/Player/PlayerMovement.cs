@@ -20,28 +20,18 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     private int direction = 1; // Dirección hacia donde mira el jugador / 1 = derecha / -1 = izquierda.
 
     private bool isGrounded; // Indica si el jugador está tocando el piso. True = está en el piso / False = está en el aire.
+    private bool isOnPlayer; // Indica si el jugador está tocando a otro jugador (para permitir salto desde la cabeza de otro jugador).
+    private bool isOnSurface; // Indica si el jugador está tocando cualquier superficie (piso o jugador).
 
     private Animator animator; // Referencia al Animator del jugador. Sirve para cambiar entre Idle, Run y Jump.
     private Rigidbody2D rb; // Referencia al Rigidbody2D del jugador. Sirve para moverlo usando físicas.
     private BombType currentBombType = BombType.Normal; // Por default el jugador empieza con el tipo de bomba normal.
 
-    [Header("Controles")]
-
-    // Tecla para moverse a la izquierda.
-    // Player1 usa A / Player2 puede usar LeftArrow desde el Inspector.
-    [SerializeField] private KeyCode leftKey = KeyCode.A;
-
-    // Tecla para moverse a la derecha.
-    // Player1 usa D / Player2 puede usar RightArrow desde el Inspector.
-    [SerializeField] private KeyCode rightKey = KeyCode.D;
-
-    // Tecla para saltar.
-    // Player1 usa W / Player2 puede usar UpArrow desde el Inspector.
-    [SerializeField] private KeyCode jumpKey = KeyCode.W;
-
-    // Tecla para lanzar bomba.
-    // Player1 usa X /Player2 puede usar Space desde el Inspector.
-    [SerializeField] private KeyCode bombKey = KeyCode.X;
+    [Header("Controles")] // Se asigan desde la funcion SetControls, que es llamada por el PlayerSpawnManager al crear el jugador.
+    private KeyCode leftKey;
+    private KeyCode rightKey;
+    private KeyCode jumpKey;
+    private KeyCode bombKey;
 
     // Start se ejecuta una sola vez cuando inicia el juego.
     void Start()
@@ -102,9 +92,14 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
         // Si moveInput es diferente de 0, significa que se está moviendo.
         animator.SetBool("isRunning", moveInput != 0);
 
+        isOnSurface = isGrounded || isOnPlayer;
+
         // Le decimos al Animator si el jugador está saltando.
         // Si NO está en el piso, entonces está en el aire.
-        animator.SetBool("isJumping", !isGrounded);
+        animator.SetBool("isJumping", !isOnSurface);
+
+        // Le decimos al Animator si el jugador está cayendo.
+        animator.SetBool("isFalling", rb.linearVelocity.y < 0 && !isOnSurface);
 
         // Si el jugador se mueve hacia la derecha...
         if (moveInput > 0)
@@ -132,23 +127,17 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
         // Si se presiona la tecla de salto y todavía quedan saltos disponibles...
         if (Input.GetKeyDown(jumpKey) && jumpsRemaining > 0)
         {
+            isOnPlayer = false;
+
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
-             if (!isGrounded && jumpsRemaining == 1)
+            if (!isGrounded && jumpsRemaining == 1)
             {
-             animator.SetBool("isDoubleJumping", true);
+                animator.SetBool("isDoubleJumping", true);
             }
 
             jumpsRemaining--;
         }
-
-        // Esta tecla H es solo para probar daño.
-        // Cuando el sistema de bombas haga daño, esta parte se puede borrar.
-        //if (Input.GetKeyDown(KeyCode.H))
-        //{
-        //    // Le quita 1 punto de vida al jugador.
-        //    TakeDamage(1);
-        //}
 
         // Si se presiona la tecla de bomba...
         if (Input.GetKeyDown(bombKey))
@@ -168,16 +157,36 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
         jumpsRemaining = maxJumps;
         animator.SetBool("isDoubleJumping", false);
         }
+
+        // Si cayó encima de otro jugador...
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                // Verifica que esté encima del otro player.
+                if (contact.normal.y > 0.5f)
+                {
+                    isOnPlayer = true;
+                    jumpsRemaining = maxJumps;
+                    animator.SetBool("isDoubleJumping", false);
+                }
+            }
+        }
     }
 
     // Esta función se ejecuta cuando el jugador deja de tocar otro collider.
     private void OnCollisionExit2D(Collision2D collision)
     {
         // Si dejó de tocar el objeto llamado Ground...
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
             // Marcamos que ya no está en el piso.
             isGrounded = false;
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isOnPlayer = false;
         }
     }
 
@@ -196,6 +205,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
         {
             // El jugador muere.
             Die();
+            return; // Salimos de la función para que no ejecute el trigger de "Hit" después de morir.
         }
 
         animator.SetTrigger("Hit");
@@ -272,5 +282,17 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     public void AddBoomerang()
     {
         Debug.Log("Tipo de bomba ahora: Boomerang");
+    }
+
+    public void SetControls(KeyCode left, KeyCode right, KeyCode jump, KeyCode bomb)
+    {
+        leftKey = left;
+        rightKey = right;
+        jumpKey = jump;
+        bombKey = bomb;
+    }
+
+    public void EnablePhysics(){
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 }
