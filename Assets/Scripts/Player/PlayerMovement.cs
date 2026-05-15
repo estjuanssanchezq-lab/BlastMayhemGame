@@ -135,12 +135,12 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
              if (!isGrounded && jumpsRemaining == 1)
-        {
+            {
              animator.SetBool("isDoubleJumping", true);
-        }
+            }
 
-    jumpsRemaining--;
-}
+            jumpsRemaining--;
+        }
 
         // Esta tecla H es solo para probar daño.
         // Cuando el sistema de bombas haga daño, esta parte se puede borrar.
@@ -197,6 +197,8 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
             // El jugador muere.
             Die();
         }
+
+        animator.SetTrigger("Hit");
     }
 
     // Función que se ejecuta cuando el jugador muere.
@@ -204,7 +206,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     {
         Debug.Log("Player murió");
 
-        animator.SetBool("isDead", true);
+        animator.SetTrigger("Die");
 
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = RigidbodyType2D.Static;
@@ -214,7 +216,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
 
     void DisablePlayer()
     {
-    gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     // Función encargada de lanzar la bomba.
