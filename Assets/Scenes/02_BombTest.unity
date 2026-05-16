@@ -985,7 +985,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   bombPrefab: {fileID: 6268137492468819005, guid: f0a2953d5e720c0468f955032142d510, type: 3}
   healthPrefab: {fileID: 6268137492468819005, guid: 68d79e6e0359e954b9a58c23229e6378, type: 3}
-  stickyPrefab: {fileID: 6268137492468819005, guid: 6acccda07d7b92048942b91713fee7ce, type: 3}
+  gravityPrefab: {fileID: 6268137492468819005, guid: 6acccda07d7b92048942b91713fee7ce, type: 3}
+  stickyPrefab: {fileID: 6268137492468819005, guid: f4b5d28b76e5b08418512835bb960176, type: 3}
+  stringPrefab: {fileID: 6268137492468819005, guid: f82f6c0758cfaae49a07d4ebe4d3ba34, type: 3}
   fallingSpawnPoints:
   - {fileID: 177591074}
   - {fileID: 1498080224}
@@ -1008,8 +1010,10 @@ MonoBehaviour:
   - {fileID: 1416520650}
   - {fileID: 467866878}
   bombRepeatTime: 5
-  healthRepeatTime: 8
-  stickyRepeatTime: 10
+  healthRepeatTime: 10
+  gravityRepeatTime: 20
+  stickyRepeatTime: 20
+  stringRepeatTime: 20
   blockedSpawnLayers:
     serializedVersion: 2
     m_Bits: 1664

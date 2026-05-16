@@ -4,7 +4,7 @@ public class BombParabolicMovement : MonoBehaviour
 {
     [Header("Values")]
     [SerializeField] private float g = 9.81f; // Aceleración debido a la gravedad   
-    [SerializeField] private float c = 0.4f; // Coeficiente de resistencia del aire
+    [SerializeField] private float c = 1.2f; // Coeficiente de resistencia del aire
     [SerializeField] private float m = 1f; // Masa de la bomba
 
     [SerializeField] private float e = 0.6f;
@@ -13,6 +13,7 @@ public class BombParabolicMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     private float v_x, v_y;
+    private int gravityDirection = -1;
     private bool launched = false;
 
 
@@ -42,6 +43,8 @@ public class BombParabolicMovement : MonoBehaviour
         v_x = initialVelocity.x;
         v_y = initialVelocity.y;
 
+        gravityDirection = -1;
+
         // Marcar la bomba como lanzada para iniciar el movimiento parabólico en el Update
         launched = true;
     }
@@ -49,7 +52,7 @@ public class BombParabolicMovement : MonoBehaviour
     public void MovimientoParabolico()
     {
         v_x = v_x + (-c / m * v_x) * Time.fixedDeltaTime; // Velocidad horizontal con rozamiento
-        v_y = v_y + ((-c / m * v_y) - g) * Time.fixedDeltaTime; // Velocidad vertical con rozamiento
+        v_y = v_y + ((-c / m * v_y) + gravityDirection * g) * Time.fixedDeltaTime; // Velocidad vertical con rozamiento
 
         // Le envio a Unity la velocidad, y Unity se encarga de mover la bomba en consecuencia.
         // Esto permite controlar el movimiento parabolico manualmente, sin necesidad de desactivar
@@ -67,6 +70,11 @@ public class BombParabolicMovement : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero; // Detener el movimiento, ya que puede seguir con la ultima velocidad
                                           // con la que venia
+    }
+
+    public void ToggleGravity()
+    {
+        gravityDirection = gravityDirection * -1;
     }
 
     // Rebotes...
