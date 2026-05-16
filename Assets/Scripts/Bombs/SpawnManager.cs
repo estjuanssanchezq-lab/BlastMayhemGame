@@ -12,9 +12,9 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private Transform[] floatingSpawnPoints;
 
     [Header("Repeat Times")]
-    [SerializeField] private float bombRepeatTime = 10f;
-    [SerializeField] private float healthRepeatTime = 15f;
-    [SerializeField] private float stickyRepeatTime = 20f;
+    [SerializeField] private float bombRepeatTime = 5f;
+    [SerializeField] private float healthRepeatTime = 8f;
+    [SerializeField] private float stickyRepeatTime = 10f;
 
     [SerializeField] private LayerMask blockedSpawnLayers; // Capa para detectar obstáculos en los puntos de spawn
     [SerializeField] private float checkRadius = 0.6f; // Radio para verificar si el punto de spawn está bloqueado

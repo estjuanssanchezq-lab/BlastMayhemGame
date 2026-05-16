@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     private Rigidbody2D rb; // Referencia al Rigidbody2D del jugador. Sirve para moverlo usando físicas.
     private BombType currentBombType = BombType.Normal; // Por default el jugador empieza con el tipo de bomba normal.
 
-    [Header("Controles")] // Se asigan desde la funcion SetControls, que es llamada por el PlayerSpawnManager al crear el jugador.
+    // Se asigan desde la funcion SetControls, que es llamada por el PlayerSpawnManager al crear el jugador.
     private KeyCode leftKey;
     private KeyCode rightKey;
     private KeyCode jumpKey;
@@ -134,6 +134,8 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
             if (!isGrounded && jumpsRemaining == 1)
             {
                 animator.SetBool("isDoubleJumping", true);
+                animator.SetBool("isFalling", false);
+                animator.SetBool("isJumping", false);
             }
 
             jumpsRemaining--;
@@ -253,8 +255,8 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
 
         if (bombScript != null)
         {
-            //bombScript.Throw(new Vector2(direction, 1f), 10f);
-            bombScript.Throw(Vector2.up, 10f);
+            bombScript.Throw(new Vector2(direction, 1f), 10f);
+            //bombScript.Throw(Vector2.up, 10f);
 
         }
 
@@ -277,6 +279,7 @@ public class PlayerMovement : MonoBehaviour, IPickupReceiver
     public void AddHealth()
     {
         Debug.Log("Salud aumentada");
+        currentHealth += 1;
     }
 
     public void AddBoomerang()
